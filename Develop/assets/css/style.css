@@ -10,11 +10,16 @@ body {
     background-color: #d9dcd6;
 }
 /*this div is a container for flex elements involving the main and aside panels */
-div {
+.outermost {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+/* this div is a container for the flex elements within the main panel
+containing the header and paragraph*/ 
+.innermost {
+    margin: 20px;
 }
 
 /* these attributes pertain to the header and its navigational list */
@@ -90,6 +95,7 @@ figure {
 /* this is for the main sections */
 p {
     font-size: 16px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -107,40 +113,34 @@ h2 {
     gap: 10px 20px;
     align-items: center;
     margin-left: 20px;
-    align-content: right;
+    align-content: center;
 }
 
 main img {
     max-height: 200px;
+    margin: 20px;
 }
 
 .search-engine-optimization, .online-reputation-management, .social-media-marketing{
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
     padding: 20px;
     height: auto;
     min-height: 300px;
     display: flex;
     background-color: #0072bb;
     color: #ffffff;
+    align-items: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
 /* this is for the aside bar */
 aside {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-top: 10px;
     padding: 20px;
     clear: both;
-    float: right;
-    width: 20%;
+    width: 22.5%;
     height: 100%;
     background-color: #2589bd;
 }
@@ -161,12 +161,29 @@ aside img {
     max-width: 150px;
 }
 
-@media screen and (max-width: 768px){
+/* this is to make the ordering look nicer when in smaller window*/ 
+@media screen and (max-width: 1000px){
     aside {
+        margin-top: 20px;
         flex-direction: row;
+        margin-left: 30px;
+        width: 88%;
     }
 
-    aside {
-        width: 75%;
+    .content {
+        width: 90%;
+        margin-left: 30px;
     }
+
+    .outermost {
+        justify-content: flex-start;
+        margin-bottom: 4vh;
+    }
+
+    aside p {
+        margin-right: 30px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
 }
