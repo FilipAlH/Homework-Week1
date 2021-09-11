@@ -6,8 +6,8 @@ In this assignment I will refactor the code of an already existing web page in o
 
 The refactoring includes improving comment quality, semantics, as well as transforming the framework to incorporate flex
 
-[website]: https://filipalh.github.io/Homework-Week1/
-[website images]: https://i.imgur.com/viiijpK.png
-                  https://i.imgur.com/BEVQoKw.png
+website: https://filipalh.github.io/Homework-Week1/
+website images: https://i.imgur.com/viiijpK.png
+                https://i.imgur.com/BEVQoKw.png
                   
 
