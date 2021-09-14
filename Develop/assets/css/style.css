@@ -162,6 +162,12 @@ aside img {
     max-width: 150px;
 }
 
+/*this is for the footer*/
+footer {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 /* this is to make the ordering look nicer when in smaller window*/ 
 @media screen and (max-width: 1000px){
     aside {
