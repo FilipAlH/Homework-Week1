@@ -8,6 +8,6 @@ The refactoring includes improving comment quality, semantics, as well as transf
 
 website: https://filipalh.github.io/Homework-Week1/
 
-https://github.com/FilipAlH/Homework-Week1/issues/2#issue-995481150
+<img src="https://github.com/FilipAlH/Homework-Week1/issues/2#issue-995481150">
                   
 
